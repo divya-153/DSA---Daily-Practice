@@ -1,0 +1,8 @@
+from collections import Counter  
+nums=[1,2,3,4,2,2,3,3,4]
+c=Counter(nums)
+ans=max(list(c.values()))
+
+for key,value in c.items():
+    if value==ans:
+        print(key)
